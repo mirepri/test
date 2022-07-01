@@ -49,8 +49,10 @@ img {
 }
 
 button {
-    background-color: rgb(50, 0, 150);
+    background-color: rgb(68, 18, 168);
+    font-size: 1rem;
     color: white;
+    border: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
