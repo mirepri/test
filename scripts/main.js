@@ -1,14 +1,22 @@
 // comment here
 
 let myImage = document.querySelector('img');
-
+let experimentalHero = {
+    url: 'images/experimental-hero.jpeg',
+    alt: 'Alt of Experimental Hero'
+};
+let ray = {
+  url: 'images/ray.jpeg',
+  alt: 'Alt of Ray'
+};
 myImage.onclick = function () {
     let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/experimental-hero') {
-        myImage.setAttribute('src','images/ray.jpeg');
-        myImage.setAttribute('alt', 'abstract image');
+    if(mySrc === experimentalHero.url) {
+        myImage.setAttribute('src', ray.url);
+        myImage.setAttribute('alt', ray.alt);
     } else {
-        myImage.setAttribute('src','images/experimental-hero');
+        myImage.setAttribute('src', experimentalHero.url);
+        myImage.setAttribute('alt', experimentalHero.alt);
     }
 }
 
