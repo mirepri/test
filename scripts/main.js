@@ -6,6 +6,7 @@ myImage.onclick = function () {
     let mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/experimental-hero') {
         myImage.setAttribute('src','images/ray.jpeg');
+        myImage.setAttribute('alt', 'abstract image');
     } else {
         myImage.setAttribute('src','images/experimental-hero');
     }
